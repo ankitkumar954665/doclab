@@ -123,3 +123,75 @@ galleryItems.forEach(function (item) {
     image.style.transform = 'scale(1) translate(0, 0)'
   })
 })
+
+/**
+ * DYNAMIC SECTION NAVIGATION
+ *
+ * Load different sections (Doctors, Services, Contact) on navbar link click
+ */
+
+const dynamicSections = document.querySelectorAll('[data-section]')
+const navLinks = document.querySelectorAll('[data-nav-link]')
+
+const showSection = function (sectionName) {
+  // Hide all dynamic sections first
+  dynamicSections.forEach(function (section) {
+    section.style.display = 'none'
+  })
+
+  // If home is clicked, hide dynamic sections and show home content
+  if (sectionName === 'home') {
+    document.querySelector('article').style.display = 'block'
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
+
+  // Hide home content and show dynamic section
+  document.querySelector('article').style.display = 'none'
+
+  const activeSection = document.querySelector(
+    `[data-section="${sectionName}"]`
+  )
+  if (activeSection) {
+    activeSection.style.display = 'block'
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+
+    // Trigger reveal animations
+    const revealElements = activeSection.querySelectorAll('[data-reveal]')
+    revealElements.forEach(function (el) {
+      el.classList.remove('revealed')
+      setTimeout(function () {
+        el.classList.add('revealed')
+      }, 10)
+    })
+  }
+}
+
+// Add click listeners to nav links
+navLinks.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault()
+    const sectionName = this.getAttribute('data-nav-link')
+    showSection(sectionName)
+
+    // Close mobile menu if open
+    if (navbar.classList.contains('active')) {
+      navbar.classList.remove('active')
+      overlay.classList.remove('active')
+      document.body.classList.remove('nav-active')
+    }
+  })
+})
+
+/**
+ * CONTACT FORM SUBMISSION
+ */
+
+const contactForm = document.querySelector('.contact-form')
+if (contactForm) {
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault()
+    alert('Thank you for your message! We will contact you soon.')
+    this.reset()
+  })
+}
