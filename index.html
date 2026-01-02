@@ -88,23 +88,36 @@
 
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Home</a>
+              <a href="#home" class="navbar-link title-md" data-nav-link="home"
+                >Home</a
+              >
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Doctors</a>
+              <a
+                href="#doctors-section"
+                class="navbar-link title-md"
+                data-nav-link="doctors"
+                >Doctors</a
+              >
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Services</a>
+              <a
+                href="#services-section"
+                class="navbar-link title-md"
+                data-nav-link="services"
+                >Services</a
+              >
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Blog</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#" class="navbar-link title-md">Contact</a>
+              <a
+                href="#contact-section"
+                class="navbar-link title-md"
+                data-nav-link="contact"
+                >Contact</a
+              >
             </li>
           </ul>
 
@@ -808,8 +821,421 @@
     </main>
 
     <!-- 
-    - #FOOTER
+    - #DYNAMIC SECTIONS (Doctors, Services, Contact)
   -->
+
+    <!-- DOCTORS SECTION -->
+    <section
+      class="dynamic-section"
+      id="doctors-section"
+      data-section="doctors"
+      style="display: none"
+    >
+      <div class="container">
+        <p class="section-subtitle title-lg text-center" data-reveal="bottom">
+          Our Medical Team
+        </p>
+
+        <h2 class="section-title headline-md text-center" data-reveal="bottom">
+          Meet Our Doctors
+        </h2>
+
+        <ul class="doctors-list">
+          <li data-reveal="bottom">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img
+                  src="./assets/images/icon-1.png"
+                  width="150"
+                  height="150"
+                  alt="Dr. Rajesh Kumar"
+                  loading="lazy"
+                />
+              </div>
+              <div class="doctor-info">
+                <h3 class="headline-sm doctor-name">Dr. Rajesh Kumar</h3>
+                <p class="doctor-specialty">Psychiatry Specialist</p>
+                <p class="doctor-experience">15+ years of experience</p>
+                <p class="doctor-bio">
+                  Specializing in mental health and behavioral disorders with
+                  proven track record of successful patient outcomes.
+                </p>
+                <div class="doctor-schedule">
+                  <p>
+                    <strong>Working Hours:</strong> Mon-Fri 9:00 AM - 5:00 PM
+                  </p>
+                  <p>
+                    <strong>Availability:</strong> Available for appointments
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li data-reveal="bottom">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img
+                  src="./assets/images/icon-2.png"
+                  width="150"
+                  height="150"
+                  alt="Dr. Priya Sharma"
+                  loading="lazy"
+                />
+              </div>
+              <div class="doctor-info">
+                <h3 class="headline-sm doctor-name">Dr. Priya Sharma</h3>
+                <p class="doctor-specialty">Gynecology Specialist</p>
+                <p class="doctor-experience">12+ years of experience</p>
+                <p class="doctor-bio">
+                  Expert in women's health, obstetrics, and gynecological
+                  procedures with compassionate patient care.
+                </p>
+                <div class="doctor-schedule">
+                  <p>
+                    <strong>Working Hours:</strong> Mon-Sat 10:00 AM - 4:00 PM
+                  </p>
+                  <p>
+                    <strong>Availability:</strong> Available for appointments
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li data-reveal="bottom">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img
+                  src="./assets/images/icon-3.png"
+                  width="150"
+                  height="150"
+                  alt="Dr. Amit Patel"
+                  loading="lazy"
+                />
+              </div>
+              <div class="doctor-info">
+                <h3 class="headline-sm doctor-name">Dr. Amit Patel</h3>
+                <p class="doctor-specialty">Pulmonology Specialist</p>
+                <p class="doctor-experience">18+ years of experience</p>
+                <p class="doctor-bio">
+                  Leading expert in respiratory and lung diseases with advanced
+                  diagnostic and treatment techniques.
+                </p>
+                <div class="doctor-schedule">
+                  <p>
+                    <strong>Working Hours:</strong> Tue-Sat 8:00 AM - 3:00 PM
+                  </p>
+                  <p><strong>Availability:</strong> Emergency available</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li data-reveal="bottom">
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img
+                  src="./assets/images/icon-4.png"
+                  width="150"
+                  height="150"
+                  alt="Dr. Neha Singh"
+                  loading="lazy"
+                />
+              </div>
+              <div class="doctor-info">
+                <h3 class="headline-sm doctor-name">Dr. Neha Singh</h3>
+                <p class="doctor-specialty">Orthopedics Specialist</p>
+                <p class="doctor-experience">14+ years of experience</p>
+                <p class="doctor-bio">
+                  Specialized in bone, joint, and spine disorders with expertise
+                  in surgical and non-surgical treatments.
+                </p>
+                <div class="doctor-schedule">
+                  <p>
+                    <strong>Working Hours:</strong> Mon-Fri 9:00 AM - 6:00 PM
+                  </p>
+                  <p>
+                    <strong>Availability:</strong> Available for appointments
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section
+      class="dynamic-section"
+      id="services-section"
+      data-section="services"
+      style="display: none"
+    >
+      <div class="container">
+        <p class="section-subtitle title-lg text-center" data-reveal="bottom">
+          What We Offer
+        </p>
+
+        <h2 class="section-title headline-md text-center" data-reveal="bottom">
+          Our Services & Facilities
+        </h2>
+
+        <ul class="services-list">
+          <li data-reveal="bottom">
+            <div class="service-detail-card">
+              <div class="service-icon">
+                <img
+                  src="./assets/images/icon-1.png"
+                  width="80"
+                  height="80"
+                  alt="Emergency Service"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="headline-sm service-title">24/7 Emergency Care</h3>
+              <p class="service-description">
+                Round-the-clock emergency department with advanced life support
+                systems and experienced trauma specialists.
+              </p>
+              <ul class="service-features">
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  Ambulance service available
+                </li>
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon> ICU
+                  facilities
+                </li>
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon> Trauma
+                  care units
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li data-reveal="bottom">
+            <div class="service-detail-card">
+              <div class="service-icon">
+                <img
+                  src="./assets/images/icon-2.png"
+                  width="80"
+                  height="80"
+                  alt="Surgery"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="headline-sm service-title">Advanced Surgery</h3>
+              <p class="service-description">
+                State-of-the-art surgical facilities with minimally invasive
+                techniques and experienced surgical team.
+              </p>
+              <ul class="service-features">
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  Laparoscopic surgery
+                </li>
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon> Robotic
+                  surgery options
+                </li>
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  Post-operative care
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li data-reveal="bottom">
+            <div class="service-detail-card">
+              <div class="service-icon">
+                <img
+                  src="./assets/images/icon-3.png"
+                  width="80"
+                  height="80"
+                  alt="Diagnostics"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="headline-sm service-title">Diagnostic Services</h3>
+              <p class="service-description">
+                Comprehensive diagnostic testing with latest imaging and
+                laboratory equipment.
+              </p>
+              <ul class="service-features">
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon> CT and
+                  MRI scans
+                </li>
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon> Blood &
+                  pathology tests
+                </li>
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  Ultrasound services
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li data-reveal="bottom">
+            <div class="service-detail-card">
+              <div class="service-icon">
+                <img
+                  src="./assets/images/icon-4.png"
+                  width="80"
+                  height="80"
+                  alt="Therapy"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="headline-sm service-title">
+                Rehabilitation & Therapy
+              </h3>
+              <p class="service-description">
+                Comprehensive rehabilitation programs for physical and
+                occupational recovery.
+              </p>
+              <ul class="service-features">
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  Physiotherapy
+                </li>
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  Occupational therapy
+                </li>
+                <li>
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  Counseling services
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section
+      class="dynamic-section"
+      id="contact-section"
+      data-section="contact"
+      style="display: none"
+    >
+      <div class="container">
+        <p class="section-subtitle title-lg text-center" data-reveal="bottom">
+          Get In Touch
+        </p>
+
+        <h2 class="section-title headline-md text-center" data-reveal="bottom">
+          Contact Us
+        </h2>
+
+        <div class="contact-content">
+          <div class="contact-info" data-reveal="left">
+            <h3 class="headline-sm contact-title">Contact Information</h3>
+
+            <div class="contact-item-detail">
+              <ion-icon name="call-outline"></ion-icon>
+              <div>
+                <p class="contact-label">Phone</p>
+                <a href="tel:0029129102320" class="contact-value"
+                  >+92 (0) 291-023-20</a
+                >
+                <a href="tel:000232439493" class="contact-value"
+                  >+92 (0) 232-434-93</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item-detail">
+              <ion-icon name="mail-outline"></ion-icon>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:contact@doclab.com" class="contact-value"
+                  >contact@doclab.com</a
+                >
+                <a href="mailto:info@doclab.com" class="contact-value"
+                  >info@doclab.com</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item-detail">
+              <ion-icon name="location-outline"></ion-icon>
+              <div>
+                <p class="contact-label">Address</p>
+                <p class="contact-value">
+                  2416 Mapleview Drive<br />Tampa, FL 33634<br />United States
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item-detail">
+              <ion-icon name="time-outline"></ion-icon>
+              <div>
+                <p class="contact-label">Working Hours</p>
+                <p class="contact-value">
+                  Monday - Friday: 8:00 AM - 6:00 PM<br />Saturday: 9:00 AM -
+                  4:00 PM<br />Sunday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" data-reveal="right">
+            <h3 class="headline-sm form-title">Send us a Message</h3>
+
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Your Name"
+                required
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                placeholder="Your Email"
+                required
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Subject"
+                required
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                placeholder="Your Message"
+                rows="5"
+                required
+                class="form-input"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn has-before title-md">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section blog" aria-labelledby="blog-label">
 
     <footer
       class="footer"
